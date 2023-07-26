@@ -1,30 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     display: flex;
-    margin-top: 0;
     flex-direction: column;
     overflow: hidden;
+    font-family: Roboto, sans-serif;
 }
 
-.header-container, .footer-container{
+.header-container, .footer-container {
     background: #1F2937;
     color: #e5e7eb;
-    justify-content: space-between;
     padding: 16px;
+    display: flex;
+}
+
+.right-links, .logo {
+    align-items: center;
 }
 
 .header-container {
-    display: flex;
     height: 30px;
-    margin: 0;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .right-links {
     display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
     gap: 16px;
 }
@@ -37,8 +45,13 @@ a {
 
 .logo {
     font-size: 24px;
-    color: #f9faf8;
-    justify-content: start;
+    color: #F9FAF8;
+    margin: auto;
+}
+
+.copyright {
+    justify-content: center;
+    margin: auto;
 }
 
 .content-container {
